@@ -1,0 +1,138 @@
+/* Part 3 Social Media */
+aside {
+  position: fixed; /* moving */
+  right: 0;
+  overflow: hidden;
+  bottom: 10em;
+}
+@mixin social {
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+  &::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+  }
+  &::after {
+    padding-left: 1em;
+    font-size: 1em;
+  }
+}
+/* my Blog */
+.ftBlog {
+  content: "\f5fc";
+  @include social();
+}
+.blog {
+  background: #e17b77;
+  color: $primaryBtn;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.blog::after {
+  content: "Check out my blog";
+}
+.blog:hover {
+  border-radius: 1em 0 0 1em;
+  transform: translateX(-10em);
+}
+
+/* My Twitter */
+.ftTwitter {
+  content: "\f099";
+  @include social();
+}
+.twitter {
+  background: #00aced;
+  color: $primaryBtn;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.twitter::after {
+  content: "Follow me on Twitter";
+}
+.twitter:hover {
+  border-radius: 1em 0 0 1em;
+  transform: translateX(-10em);
+}
+
+/* My Linkedin */
+.ftLinkedin {
+  content: "\f0e1";
+  @include social();
+}
+.linkedin {
+  background: #007bb6;
+  color: $primaryBtn;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.linkedin::after {
+  content: "Connect on Linkedin";
+}
+.linkedin:hover {
+  border-radius: 1em 0 0 1em;
+  transform: translateX(-10em);
+}
+
+/* My Facebook */
+.ftFacebook {
+  content: "\f39e";
+  @include social();
+}
+.facebook {
+  background: #3b5998;
+  color: $primaryBtn;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.facebook::after {
+  content: "Like my Facebook page";
+}
+.facebook:hover {
+  border-radius: 1em 0 0 1em;
+  transform: translateX(-10em);
+}
+
+/* My Github */
+.ftGithub {
+  content: "\f09b";
+  @include social();
+}
+.github {
+  background: #333;
+  color: $primaryBtn;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.github::after {
+  content: "See project on Github";
+}
+.github:hover {
+  border-radius: 1em 0 0 1em;
+  transform: translateX(-10em);
+}

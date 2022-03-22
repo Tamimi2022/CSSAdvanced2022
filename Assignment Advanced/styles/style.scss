@@ -1,0 +1,23 @@
+@import "./variable";
+
+@import "./header";
+
+@import "./grid";
+
+@import "./media";
+
+body {
+  background: #c3cfe2;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+/* Hover */
+.grid-parent > div:nth-of-type(n):hover {
+  background: #000;
+  opacity: 1; /* for make sure */
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer; /* Move the mouse On the profiles */
+}

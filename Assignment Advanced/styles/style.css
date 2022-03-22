@@ -1,0 +1,456 @@
+header,
+section {
+  background: #fff;
+  margin: 20px;
+  border: 30px;
+  border-radius: 20px;
+}
+
+header h1,
+section h1 {
+  padding: 2.6rem;
+  /* 40px */
+  font-size: 1.4rem;
+  /* 30px */
+  line-height: 2.4rem;
+  color: #5c5757;
+  text-align: left;
+}
+
+header nav,
+section nav {
+  text-align: center;
+}
+
+header .my-foto,
+section .my-foto {
+  width: 110px;
+  height: 105px;
+  border-radius: 100%;
+  border: 5px #fff solid;
+}
+
+header footer,
+section footer {
+  background: #686de0;
+  margin-top: -67px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header .text,
+section .text {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+header h2,
+section h2 {
+  font-size: 1.1rem;
+  /* 18px */
+  padding-top: 1rem;
+  /* 15px */
+}
+
+header p,
+section p {
+  font-size: 1.2rem;
+  /* 20px */
+  color: #bbbbbb;
+}
+
+header section,
+section section {
+  -webkit-transition: opacity 350ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
+  /* Check */
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  border: 30px;
+}
+
+@media (min-width: 500px) {
+  header {
+    max-width: 448px;
+  }
+}
+
+.grid-parent {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+  width: 80%;
+  margin: 3em auto;
+  gap: 2em;
+  /* Button */
+  /* all Profils Covers */
+  /* The Button show */
+}
+
+.grid-parent .profile1,
+.grid-parent .profile2,
+.grid-parent .profile3,
+.grid-parent .profile4,
+.grid-parent .profile5,
+.grid-parent .profile6,
+.grid-parent .profile7 {
+  padding: 0.1rem;
+  /* 20px */
+  font-size: 1.1rem;
+  /* 30px */
+  position: relative;
+  -webkit-box-shadow: 0px 9px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 9px 10px 1px rgba(0, 0, 0, 0.5);
+  /* Design */
+}
+
+.grid-parent .content-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: opacity 350ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
+  /* Durasion of Button */
+  padding: 1em;
+  border-radius: 0.3em;
+  border: 0;
+  font-size: 1.1em;
+  font-weight: 450;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px 6px #333;
+          box-shadow: 0px 0px 8px 6px #333;
+}
+
+.grid-parent .profile1:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile2:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile3:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile4:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile5:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile6:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile7:hover section {
+  opacity: 0;
+}
+
+.grid-parent .profile1:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile2:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile3:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile4:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile5:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile6:hover .content-btn {
+  opacity: 1;
+}
+
+.grid-parent .profile7:hover .content-btn {
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .grid-parent {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-parent {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    position: relative;
+  }
+}
+
+/* Part 3 Social Media */
+aside {
+  position: fixed;
+  /* moving */
+  right: 0;
+  overflow: hidden;
+  bottom: 10em;
+}
+
+/* my Blog */
+.ftBlog {
+  content: "\f5fc";
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+
+.ftBlog::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.ftBlog::after {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.blog {
+  background: #e17b77;
+  color: #fff;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.blog::after {
+  content: "Check out my blog";
+}
+
+.blog:hover {
+  border-radius: 1em 0 0 1em;
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* My Twitter */
+.ftTwitter {
+  content: "\f099";
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+
+.ftTwitter::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.ftTwitter::after {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.twitter {
+  background: #00aced;
+  color: #fff;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.twitter::after {
+  content: "Follow me on Twitter";
+}
+
+.twitter:hover {
+  border-radius: 1em 0 0 1em;
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* My Linkedin */
+.ftLinkedin {
+  content: "\f0e1";
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+
+.ftLinkedin::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.ftLinkedin::after {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.linkedin {
+  background: #007bb6;
+  color: #fff;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.linkedin::after {
+  content: "Connect on Linkedin";
+}
+
+.linkedin:hover {
+  border-radius: 1em 0 0 1em;
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* My Facebook */
+.ftFacebook {
+  content: "\f39e";
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+
+.ftFacebook::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.ftFacebook::after {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.facebook {
+  background: #3b5998;
+  color: #fff;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.facebook::after {
+  content: "Like my Facebook page";
+}
+
+.facebook:hover {
+  border-radius: 1em 0 0 1em;
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* My Github */
+.ftGithub {
+  content: "\f09b";
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+
+.ftGithub::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.ftGithub::after {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.github {
+  background: #333;
+  color: #fff;
+  width: 20em;
+  position: relative;
+  right: -16em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  display: block;
+}
+
+.github::after {
+  content: "See project on Github";
+}
+
+.github:hover {
+  border-radius: 1em 0 0 1em;
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+body {
+  background: #c3cfe2;
+  height: 100%;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Hover */
+.grid-parent > div:nth-of-type(n):hover {
+  background: #000;
+  opacity: 1;
+  /* for make sure */
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  /* Move the mouse On the profiles */
+}
+/*# sourceMappingURL=style.css.map */

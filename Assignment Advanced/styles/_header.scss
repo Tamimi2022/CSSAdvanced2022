@@ -1,0 +1,55 @@
+header,
+section {
+  background: $primaryBtn;
+  margin: 20px;
+  border: 30px;
+  border-radius: 20px;
+  h1 {
+    padding: 2.6rem; /* 40px */
+    font-size: 1.4rem; /* 30px */
+    line-height: 2.4rem;
+    color: rgb(92, 87, 87);
+    text-align: left;
+  }
+  nav {
+    text-align: center;
+  }
+  .my-foto {
+    width: 110px;
+    height: 105px;
+    border-radius: 100%;
+    border: 5px $primaryBtn solid;
+  }
+  footer {
+    background: #686de0;
+    margin-top: -67px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .text {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: $primaryBtn;
+  }
+  h2 {
+    font-size: 1.1rem; /* 18px */
+    padding-top: 1rem; /* 15px */
+  }
+  p {
+    font-size: 1.2rem; /* 20px */
+    color: rgb(187, 187, 187);
+  }
+  section {
+    transition: opacity 350ms ease-in-out; /* Check */
+    background: $primaryBtn;
+    border-radius: 20px;
+    margin: 20px;
+    border: 30px;
+  }
+}
+@media (min-width: 500px) {
+  header {
+    max-width: 448px;
+  }
+}
