@@ -4,6 +4,8 @@ section {
   margin: 20px;
   border: 30px;
   border-radius: 20px;
+  transition: opacity 650ms ease-in-out; /* Check */
+  
   h1 {
     padding: 2.6rem; /* 40px */
     font-size: 1.4rem; /* 30px */
